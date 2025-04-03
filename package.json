@@ -1,11 +1,11 @@
 {
-  "name": "{{.ProjectName}}",
+  "name": "agent-vercel-ai",
   "version": "1.0.0",
-  "description": "{{.ProjectDescription}}",
+  "description": "Agent using Vercel AI SDK",
   "main": "src/index.ts",
   "keywords": [],
   "license": "MIT",
-  "author": "{{.Author}}",
+  "author": "Blaxel",
   "scripts": {
     "start": "tsx src/index.ts",
     "prod": "node dist/index.js",
