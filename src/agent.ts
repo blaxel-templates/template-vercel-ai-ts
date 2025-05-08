@@ -1,4 +1,4 @@
-import { blModel, blTools, logger } from "@blaxel/sdk";
+import { blModel, blTools } from "@blaxel/vercel";
 import { streamText, tool } from "ai";
 import { z } from "zod";
 
@@ -13,16 +13,16 @@ export default async function agent(
 ): Promise<void> {
   const response = streamText({
     experimental_telemetry: { isEnabled: true },
-    model: await blModel("sandbox-openai").ToVercelAI(),
+    model: await blModel("sandbox-openai"),
     tools: {
-      ...(await blTools(["blaxel-search"]).ToVercelAI()),
+      ...(await blTools(["blaxel-search"])),
       weather: tool({
         description: "Get the weather in a specific city",
         parameters: z.object({
           city: z.string(),
         }),
         execute: async (args: { city: string }) => {
-          logger.debug("TOOLCALLING: local weather", args);
+          console.debug("TOOLCALLING: local weather", args);
           return `The weather in ${args.city} is sunny`;
         },
       }),
