@@ -1,5 +1,5 @@
 import { blModel, blTools } from "@blaxel/vercel";
-import { streamText, tool } from "ai";
+import { stepCountIs, streamText, tool } from "ai";
 import { z } from "zod";
 
 interface Stream {
@@ -29,6 +29,7 @@ export default async function agent(
     },
     system: "If the user ask for the weather, use the weather tool.",
     messages: [{ role: "user", content: input }],
+    stopWhen: stepCountIs(5)
   });
 
   for await (const delta of response.textStream) {
