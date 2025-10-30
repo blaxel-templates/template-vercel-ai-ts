@@ -18,7 +18,7 @@ export default async function agent(
       ...(await blTools(["blaxel-search"])),
       weather: tool({
         description: "Get the weather in a specific city",
-        parameters: z.object({
+        inputSchema: z.object({
           city: z.string(),
         }),
         execute: async (args: { city: string }) => {
@@ -29,7 +29,6 @@ export default async function agent(
     },
     system: "If the user ask for the weather, use the weather tool.",
     messages: [{ role: "user", content: input }],
-    maxSteps: 5,
   });
 
   for await (const delta of response.textStream) {
