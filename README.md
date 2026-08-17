@@ -185,7 +185,7 @@ If you need help with this template:
 - [Submit an issue](https://github.com/blaxel-templates/template-vercel-ai-ts/issues) for bug reports or feature requests
 - Visit the [Blaxel Documentation](https://docs.blaxel.ai) for platform guidance
 - Check the [Vercel AI SDK Documentation](https://sdk.vercel.ai/) for framework-specific help
-- Join our [Discord Community](https://discord.gg/G3NqzUPcHP) for real-time assistance
+- Join our [Discord Community](https://discord.gg/CsWKUZUHFQ) for real-time assistance
 
 ## 📄 License
 
