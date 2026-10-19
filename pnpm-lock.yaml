@@ -20,11 +20,11 @@ importers:
         specifier: 0.3.30
         version: 0.3.30(@hey-api/openapi-ts@0.99.0(typescript@5.9.3))(debug@4.4.3)
       '@blaxel/telemetry':
-        specifier: 0.3.30
-        version: 0.3.30(@hey-api/openapi-ts@0.99.0(typescript@5.9.3))(debug@4.4.3)(zod@4.6.6)
+        specifier: 3.0.5
+        version: 3.0.5(@hey-api/openapi-ts@0.99.0(typescript@5.9.3))(debug@4.4.3)(zod@4.6.6)
       '@blaxel/vercel':
-        specifier: 0.3.30
-        version: 0.3.30(@hey-api/openapi-ts@0.99.0(typescript@5.9.3))(debug@4.4.3)(zod@4.6.6)
+        specifier: 3.0.5
+        version: 3.0.5(@hey-api/openapi-ts@0.99.0(typescript@5.9.3))(debug@4.4.3)(zod@4.6.6)
       ai:
         specifier: ^5.0.82
         version: 5.0.273(zod@4.6.6)
@@ -124,12 +124,17 @@ packages:
     resolution: {integrity: sha512-By64a1IAd68RSZNgBuTlt7sh+V9iKwyCh9KoAzEbsWoKvf/wfD5s9rLSV4Nf0DLgAOyVqEGES8NTxgoqTHNM/g==}
     engines: {node: '>=18'}
 
-  '@blaxel/telemetry@0.3.30':
-    resolution: {integrity: sha512-LSxboBaD4+iKFAcDgLMmu29RH4rcIxyxzdFdPB5afL67A+fl/MJIP7/ERVYkLf8peyabprWK5l/utfLY8QkJyg==}
+  '@blaxel/core@3.0.5':
+    resolution: {integrity: sha512-5ts9Gkqz+5+/Gjw6xzjfqvvaCl76fkNyZdyGQXP1xElXWCvVYhiuiMPwRC6uO4GtNIH1FVzEEe7YnMFQBKvDKQ==}
+    engines: {node: '>=18'}
+    deprecated: Published by mistake, use 0.3.5 or later instead
+
+  '@blaxel/telemetry@3.0.5':
+    resolution: {integrity: sha512-uUt3TiiswOoojpdk5iU6XdF+OgxwJKBGJKXkDFWgIRXWlPFfGEk/7OtlQ/4bb3tuNlPJ9f0IWWB+pCbBJ46W9w==}
     engines: {node: '>=18'}
 
-  '@blaxel/vercel@0.3.30':
-    resolution: {integrity: sha512-fnoKOajkcYBnJNdu+J8WYUpMbHeIxLtyDw5GZ9/Aj2SnBvDfaiBS6bNhw87ILFDowOXK4E6SNUWCpg+lUglHJg==}
+  '@blaxel/vercel@3.0.5':
+    resolution: {integrity: sha512-BcMgwM6UCLDzUPSlV3fwQigeuAeZWwKE6VqvCIL9jKUDuKCUdGaAQvtbDA+3oKkIvW3ObqKM3rh55FDvUKFv4g==}
     engines: {node: '>=18'}
 
   '@esbuild/aix-ppc64@0.28.2':
@@ -869,6 +874,10 @@ packages:
   dockerfile-ast@0.7.1:
     resolution: {integrity: sha512-oX/A4I0EhSkGqrFv0YuvPkBUSYp1XiY8O8zAKc8Djglx8ocz+JfOr8gP0ryRMC2myqvDLagmnZaU9ot1vG2ijw==}
 
+  dotenv@16.6.1:
+    resolution: {integrity: sha512-uBq4egWHTcTt33a72vpSG0z3HnPuIl6NqYcTrKEg2azoEyl2hpW0zqlxysq2pK9HlDIHyHyakeYaYnSAwd8bow==}
+    engines: {node: '>=12'}
+
   dotenv@17.4.2:
     resolution: {integrity: sha512-nI4U3TottKAcAD9LLud4Cb7b2QztQMUEfHbvhTH09bqXTxnSie8WnjPALV/WMCrJZ6UV/qHJ6L03OqO3LcdYZw==}
     engines: {node: '>=12'}
@@ -1545,6 +1554,10 @@ packages:
     resolution: {integrity: sha512-o5sSPKEkg/DIQNmH43V0/uerLrpzVedkUh8tGNvaeXpfpuwjKenlSox/2O/BTlZUtEe+JG7s5YhEz608PlAHRA==}
     engines: {node: '>=0.6'}
 
+  toml@4.3.0:
+    resolution: {integrity: sha512-lVb8X9BsPVuH0M4BKeS91tXAmJvCjQ5UIyAbQFaxkKGyUFK2RPkhwaFSQH8vbpl1d23eu/IBH+dwVMHWaq9A5A==}
+    engines: {node: '>=20'}
+
   tsx@4.23.15:
     resolution: {integrity: sha512-Yiex1Ovn8z2xPpOWckIiysV1SSyRMY9BkLF++q0yKiDxCqRhosKfMg3janKkiLBwZ5c/YryloKwGZcrEmtwxKw==}
     engines: {node: '>=18.0.0'}
@@ -1632,6 +1645,9 @@ packages:
     resolution: {integrity: sha512-O/PgfnpT1xKSDeQYSCfRI5Gy3hPf91mKVDuYLUHZJMiDFptvP41MSnWofm8dnCm0256ZNfZIM7DSzuSMAFnjHA==}
     peerDependencies:
       zod: ^3.25.28 || ^4
+
+  zod@3.25.76:
+    resolution: {integrity: sha512-gzUt/qt81nXsFGKIFcC3YnfEAx5NkunCfnDlvuBSSFS02bcXu4Lmea0AFIUwbLWxWPx3d9p8S5QoaujKcNQxcQ==}
 
   zod@4.6.6:
     resolution: {integrity: sha512-4UmzQUF5fxvfcYHlbjBmejU+w+hbDnWFx4aS8kBx7nPBHcO2SqPbpAG8snbdg+Xse4pRefR98hgjFgIMCI/UhA==}
@@ -1738,14 +1754,40 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  '@blaxel/telemetry@0.3.30(@hey-api/openapi-ts@0.99.0(typescript@5.9.3))(debug@4.4.3)(zod@4.6.6)':
+  '@blaxel/core@3.0.5(@hey-api/openapi-ts@0.99.0(typescript@5.9.3))(debug@4.4.3)':
+    dependencies:
+      '@hey-api/client-fetch': 0.10.2(@hey-api/openapi-ts@0.99.0(typescript@5.9.3))
+      '@modelcontextprotocol/sdk': 1.32.1(zod@3.25.76)
+      archiver: 7.0.1
+      axios: 1.20.0(debug@4.4.3)
+      dockerfile-ast: 0.7.1
+      dotenv: 16.6.1
+      form-data: 4.0.6
+      jwt-decode: 4.0.0
+      toml: 4.3.0
+      uuid: 11.1.1
+      ws: 8.22.0
+      yaml: 2.9.1
+      zod: 3.25.76
+    transitivePeerDependencies:
+      - '@cfworker/json-schema'
+      - '@hey-api/openapi-ts'
+      - bare-abort-controller
+      - bare-buffer
+      - bufferutil
+      - debug
+      - react-native-b4a
+      - supports-color
+      - utf-8-validate
+
+  '@blaxel/telemetry@3.0.5(@hey-api/openapi-ts@0.99.0(typescript@5.9.3))(debug@4.4.3)(zod@4.6.6)':
     dependencies:
       '@ai-sdk/anthropic': 2.0.109(zod@4.6.6)
       '@ai-sdk/cerebras': 1.0.63(zod@4.6.6)
       '@ai-sdk/google': 2.0.102(zod@4.6.6)
       '@ai-sdk/groq': 2.0.57(zod@4.6.6)
       '@ai-sdk/openai': 2.0.133(zod@4.6.6)
-      '@blaxel/core': 0.3.30(@hey-api/openapi-ts@0.99.0(typescript@5.9.3))(debug@4.4.3)
+      '@blaxel/core': 3.0.5(@hey-api/openapi-ts@0.99.0(typescript@5.9.3))(debug@4.4.3)
       '@opentelemetry/api': 1.9.1
       '@opentelemetry/api-logs': 0.200.0
       '@opentelemetry/exporter-logs-otlp-http': 0.200.0(@opentelemetry/api@1.9.1)
@@ -1771,7 +1813,7 @@ snapshots:
       - utf-8-validate
       - zod
 
-  '@blaxel/vercel@0.3.30(@hey-api/openapi-ts@0.99.0(typescript@5.9.3))(debug@4.4.3)(zod@4.6.6)':
+  '@blaxel/vercel@3.0.5(@hey-api/openapi-ts@0.99.0(typescript@5.9.3))(debug@4.4.3)(zod@4.6.6)':
     dependencies:
       '@ai-sdk/anthropic': 2.0.109(zod@4.6.6)
       '@ai-sdk/cerebras': 1.0.63(zod@4.6.6)
@@ -1782,7 +1824,7 @@ snapshots:
       '@ai-sdk/mistral': 2.0.52(zod@4.6.6)
       '@ai-sdk/openai': 2.0.133(zod@4.6.6)
       '@ai-sdk/provider': 2.0.5
-      '@blaxel/core': 0.3.30(@hey-api/openapi-ts@0.99.0(typescript@5.9.3))(debug@4.4.3)
+      '@blaxel/core': 3.0.5(@hey-api/openapi-ts@0.99.0(typescript@5.9.3))(debug@4.4.3)
       ai: 5.0.273(zod@4.6.6)
     transitivePeerDependencies:
       - '@cfworker/json-schema'
@@ -1969,6 +2011,28 @@ snapshots:
   '@jsdevtools/ono@7.1.3': {}
 
   '@lukeed/ms@2.0.2': {}
+
+  '@modelcontextprotocol/sdk@1.32.1(zod@3.25.76)':
+    dependencies:
+      '@hono/node-server': 2.1.4(hono@4.13.13)
+      ajv: 8.20.0
+      ajv-formats: 3.0.1
+      content-type: 1.0.5
+      cors: 2.8.6
+      cross-spawn: 7.0.6
+      eventsource: 3.0.7
+      eventsource-parser: 3.1.1
+      express: 5.3.0
+      express-rate-limit: 8.7.1(express@5.3.0)
+      hono: 4.13.13
+      jose: 6.2.12
+      json-schema-typed: 8.0.2
+      pkce-challenge: 5.0.1
+      raw-body: 3.0.2
+      zod: 3.25.76
+      zod-to-json-schema: 3.25.2(zod@3.25.76)
+    transitivePeerDependencies:
+      - supports-color
 
   '@modelcontextprotocol/sdk@1.32.1(zod@4.6.6)':
     dependencies:
@@ -2498,6 +2562,8 @@ snapshots:
     dependencies:
       vscode-languageserver-textdocument: 1.0.15
       vscode-languageserver-types: 3.18.4
+
+  dotenv@16.6.1: {}
 
   dotenv@17.4.2: {}
 
@@ -3257,6 +3323,8 @@ snapshots:
 
   toidentifier@1.0.1: {}
 
+  toml@4.3.0: {}
+
   tsx@4.23.15:
     dependencies:
       esbuild: 0.28.2
@@ -3320,8 +3388,14 @@ snapshots:
       compress-commons: 6.0.2
       readable-stream: 4.8.0
 
+  zod-to-json-schema@3.25.2(zod@3.25.76):
+    dependencies:
+      zod: 3.25.76
+
   zod-to-json-schema@3.25.2(zod@4.6.6):
     dependencies:
       zod: 4.6.6
+
+  zod@3.25.76: {}
 
   zod@4.6.6: {}
