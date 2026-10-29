@@ -25,14 +25,14 @@ importers:
         specifier: ^2.0.58
         version: 2.0.133(zod@4.6.6)
       '@blaxel/core':
-        specifier: 0.3.30
-        version: 0.3.30(@hey-api/openapi-ts@0.99.0(typescript@5.9.3))
+        specifier: 0.3.32
+        version: 0.3.32(@hey-api/openapi-ts@0.99.0(typescript@5.9.3))(debug@4.4.3)
       '@blaxel/telemetry':
-        specifier: 0.3.30
-        version: 0.3.30(@hey-api/openapi-ts@0.99.0(typescript@5.9.3))(zod@4.6.6)
+        specifier: 0.3.32
+        version: 0.3.32(@hey-api/openapi-ts@0.99.0(typescript@5.9.3))(debug@4.4.3)(zod@4.6.6)
       '@blaxel/vercel':
-        specifier: 0.3.30
-        version: 0.3.30(@hey-api/openapi-ts@0.99.0(typescript@5.9.3))(zod@4.6.6)
+        specifier: 0.3.32
+        version: 0.3.32(@hey-api/openapi-ts@0.99.0(typescript@5.9.3))(debug@4.4.3)(zod@4.6.6)
       ai:
         specifier: ^5.0.82
         version: 5.0.273(zod@4.6.6)
@@ -128,16 +128,16 @@ packages:
     resolution: {integrity: sha512-cmG40u10QFEUrYXWYom6Lo6DLR+pND3wWABTTT9Nf7zg9F7BD46KNj+STekndp9Kg5ZAIPA0WxmTI0IwRvKvvQ==}
     engines: {node: '>=18'}
 
-  '@blaxel/core@0.3.30':
-    resolution: {integrity: sha512-By64a1IAd68RSZNgBuTlt7sh+V9iKwyCh9KoAzEbsWoKvf/wfD5s9rLSV4Nf0DLgAOyVqEGES8NTxgoqTHNM/g==}
+  '@blaxel/core@0.3.32':
+    resolution: {integrity: sha512-RkQn7/LlcUb8xfko+DXcciEsDuEG1xZ5kEqBFawwtmpvZ+uLtDjK1pRhqJ1Q8MAiYXly+HfyRbQVC4Ykudv3bw==}
     engines: {node: '>=18'}
 
-  '@blaxel/telemetry@0.3.30':
-    resolution: {integrity: sha512-LSxboBaD4+iKFAcDgLMmu29RH4rcIxyxzdFdPB5afL67A+fl/MJIP7/ERVYkLf8peyabprWK5l/utfLY8QkJyg==}
+  '@blaxel/telemetry@0.3.32':
+    resolution: {integrity: sha512-/BAUj2e322w28ewCmGyd3AZ8TNSVilNChE29cT6zDgYIdOaYpvt9iGDr7Hf+LjEqp1SWj8klScJwrAnTywOjQA==}
     engines: {node: '>=18'}
 
-  '@blaxel/vercel@0.3.30':
-    resolution: {integrity: sha512-fnoKOajkcYBnJNdu+J8WYUpMbHeIxLtyDw5GZ9/Aj2SnBvDfaiBS6bNhw87ILFDowOXK4E6SNUWCpg+lUglHJg==}
+  '@blaxel/vercel@0.3.32':
+    resolution: {integrity: sha512-81oG6mSi+RaRotJCddoCbp12teK87HTMXeAyFWFI+6TfQX4UkPnZoaPL1b1HvEeBaVo164ePySre7A32JHzaXQ==}
     engines: {node: '>=18'}
 
   '@esbuild/aix-ppc64@0.28.2':
@@ -618,11 +618,6 @@ packages:
 
   ajv-formats@3.0.1:
     resolution: {integrity: sha512-8iUql50EUR+uUcdRQ3HDqa6EVyo3docL8g5WJ3FNcWmu62IbkGUue/pEyLBW8VGKKucTPgqeks4fIU1DA4yowQ==}
-    peerDependencies:
-      ajv: ^8.0.0
-    peerDependenciesMeta:
-      ajv:
-        optional: true
 
   ajv@8.20.0:
     resolution: {integrity: sha512-Thbli+OlOj+iMPYFBVBfJ3OmCAnaSyNn4M1vz9T6Gka5Jt9ba/HIR56joy65tY6kx/FCF5VXNB819Y7/GUrBGA==}
@@ -1728,12 +1723,12 @@ snapshots:
     dependencies:
       json-schema: 0.4.0
 
-  '@blaxel/core@0.3.30(@hey-api/openapi-ts@0.99.0(typescript@5.9.3))':
+  '@blaxel/core@0.3.32(@hey-api/openapi-ts@0.99.0(typescript@5.9.3))(debug@4.4.3)':
     dependencies:
       '@hey-api/client-fetch': 0.10.2(@hey-api/openapi-ts@0.99.0(typescript@5.9.3))
       '@modelcontextprotocol/sdk': 1.32.1(zod@4.6.6)
       archiver: 7.0.1
-      axios: 1.20.0
+      axios: 1.20.0(debug@4.4.3)
       dockerfile-ast: 0.7.1
       dotenv: 17.4.2
       form-data: 4.0.6
@@ -1754,14 +1749,14 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  '@blaxel/telemetry@0.3.30(@hey-api/openapi-ts@0.99.0(typescript@5.9.3))(zod@4.6.6)':
+  '@blaxel/telemetry@0.3.32(@hey-api/openapi-ts@0.99.0(typescript@5.9.3))(debug@4.4.3)(zod@4.6.6)':
     dependencies:
       '@ai-sdk/anthropic': 2.0.109(zod@4.6.6)
       '@ai-sdk/cerebras': 1.0.63(zod@4.6.6)
       '@ai-sdk/google': 2.0.102(zod@4.6.6)
       '@ai-sdk/groq': 2.0.57(zod@4.6.6)
       '@ai-sdk/openai': 2.0.133(zod@4.6.6)
-      '@blaxel/core': 0.3.30(@hey-api/openapi-ts@0.99.0(typescript@5.9.3))
+      '@blaxel/core': 0.3.32(@hey-api/openapi-ts@0.99.0(typescript@5.9.3))(debug@4.4.3)
       '@opentelemetry/api': 1.9.1
       '@opentelemetry/api-logs': 0.200.0
       '@opentelemetry/exporter-logs-otlp-http': 0.200.0(@opentelemetry/api@1.9.1)
@@ -1787,7 +1782,7 @@ snapshots:
       - utf-8-validate
       - zod
 
-  '@blaxel/vercel@0.3.30(@hey-api/openapi-ts@0.99.0(typescript@5.9.3))(zod@4.6.6)':
+  '@blaxel/vercel@0.3.32(@hey-api/openapi-ts@0.99.0(typescript@5.9.3))(debug@4.4.3)(zod@4.6.6)':
     dependencies:
       '@ai-sdk/anthropic': 2.0.109(zod@4.6.6)
       '@ai-sdk/cerebras': 1.0.63(zod@4.6.6)
@@ -1798,7 +1793,7 @@ snapshots:
       '@ai-sdk/mistral': 2.0.52(zod@4.6.6)
       '@ai-sdk/openai': 2.0.133(zod@4.6.6)
       '@ai-sdk/provider': 2.0.5
-      '@blaxel/core': 0.3.30(@hey-api/openapi-ts@0.99.0(typescript@5.9.3))
+      '@blaxel/core': 0.3.32(@hey-api/openapi-ts@0.99.0(typescript@5.9.3))(debug@4.4.3)
       ai: 5.0.273(zod@4.6.6)
     transitivePeerDependencies:
       - '@cfworker/json-schema'
@@ -1893,7 +1888,7 @@ snapshots:
   '@fastify/ajv-compiler@4.0.7':
     dependencies:
       ajv: 8.20.0
-      ajv-formats: 3.0.1(ajv@8.20.0)
+      ajv-formats: 3.0.1
       fast-uri: 4.2.3
 
   '@fastify/deepmerge@3.2.2': {}
@@ -1990,7 +1985,7 @@ snapshots:
     dependencies:
       '@hono/node-server': 2.1.4(hono@4.13.13)
       ajv: 8.20.0
-      ajv-formats: 3.0.1(ajv@8.20.0)
+      ajv-formats: 3.0.1
       content-type: 1.0.5
       cors: 2.8.6
       cross-spawn: 7.0.6
@@ -2262,9 +2257,7 @@ snapshots:
       '@opentelemetry/api': 1.9.0
       zod: 4.6.6
 
-  ajv-formats@3.0.1(ajv@8.20.0):
-    optionalDependencies:
-      ajv: 8.20.0
+  ajv-formats@3.0.1: {}
 
   ajv@8.20.0:
     dependencies:
@@ -2322,9 +2315,9 @@ snapshots:
       '@fastify/error': 4.2.1
       fastq: 1.20.3
 
-  axios@1.20.0:
+  axios@1.20.0(debug@4.4.3):
     dependencies:
-      follow-redirects: 1.16.1
+      follow-redirects: 1.16.1(debug@4.4.3)
       form-data: 4.0.6
       https-proxy-agent: 5.0.1
       proxy-from-env: 2.1.0
@@ -2650,7 +2643,7 @@ snapshots:
     dependencies:
       '@fastify/merge-json-schemas': 0.2.2
       ajv: 8.20.0
-      ajv-formats: 3.0.1(ajv@8.20.0)
+      ajv-formats: 3.0.1
       fast-uri: 4.2.3
       json-schema-ref-resolver: 3.0.1
       rfdc: 1.4.1
@@ -2702,7 +2695,9 @@ snapshots:
       fast-querystring: 1.1.2
       safe-regex2: 5.1.2
 
-  follow-redirects@1.16.1: {}
+  follow-redirects@1.16.1(debug@4.4.3):
+    optionalDependencies:
+      debug: 4.4.3
 
   foreground-child@3.3.1:
     dependencies:
